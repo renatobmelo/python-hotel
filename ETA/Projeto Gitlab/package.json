@@ -1,0 +1,27 @@
+{
+  "name": "simple-npm-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with Express",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "build": "echo 'Compilando aplicação...'; mkdir -p dist; cp -r src/* dist/",
+    "lint": "eslint src/**/*.js",
+    "test": "mocha test/**/*.test.js",
+    "test:integration": "mocha test/integration.test.js",
+    "deploy": "echo 'Simulando deploy...'; exit 0",
+    "deploy:staging": "echo 'Deploy para staging...'; exit 0",
+    "deploy:production": "echo 'Deploy para produção...'; exit 0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.4.0",
+    "eslint": "^7.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

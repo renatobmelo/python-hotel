@@ -1,0 +1,26 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: node:16
+
+build-app:
+  stage: build
+  script:
+    - echo "Compilando aplicação..."
+    - npm run build
+
+unit-test:
+  stage: test
+  script:
+    - echo "Executando testes..."
+    - npm run test
+
+deploy-to-staging:
+  stage: deploy
+  script:
+    - echo "Deploy para staging..."
+    - npm run deploy
+
+

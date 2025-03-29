@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato - Renato</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+		<header> 
+			<div class="pessoa">
+				<nav class="menu">
+					<ul>
+						<li id="portfolio"><strong>Portfó<span>lio</span></strong></li>
+						<li><a href="index.html"><strong>Home</strong></a></li>
+						<li><a href="#about"><strong>Sobre Mim</strong></a></li>
+						<li><a href="#local"><strong>Local</strong></a></li>
+						<li><a href="#redes"><strong>Redes Sociais</strong></a></li>
+						<li><a href="contato.html"><strong>Contato</strong></a></li>
+						<li><a href="https://www.linkedin.com/in/renato-b-melo/"><strong>Linkedin</strong></a></li>
+					</ul>
+					
+				</nav>
+			</div>
+		</header>
+		
+			<main>
+				<form>
+					<label for="nomeCompleto">Nome Completo</label>
+					<input type="text" id="nomeCompleto" class="input-padrao" required>
+		
+					<label for="email">Email</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="xxx@xxx.com">
+		
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+		
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+		
+					<fieldset>
+						<legend>Como devemos entrar em contato?</legend>
+						<label for="radioEmail"><input type="radio" name="contato" value="Email" id="radioEmail">Email</label>
+		
+						<label for="radioWhatsapp"><input type="radio" name="contato" value="Whatsapp" id="radioWhatsapp" checked>Whatsapp</label>
+		
+						<label for="radioTelefone"><input type="radio" name="contato" value="telefone" id="radioTelefone">Telefone</label>
+					</fieldset>
+					
+				<br> <br>
+					<fieldset>
+						<legend>Qual horário prefere que entre em contato?</legend>
+						<select>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+				<br> <br> <br>
+						<input type="submit" value="Enviar Formulário" class="enviar">
+					</fieldset>
+				
+				</form>
+		
+				
+			</main>
+		<footer>
+			<p class="copyright">Copyright &copy;  Renato Melo - 2022 </p>
+		</footer>
+	
+	  
+	</body>
+	</html>
+</html>
